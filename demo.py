@@ -5,7 +5,10 @@ Maps complex functions onto E8 root lattice to reveal hidden symmetries.
 """
 
 import sys
-sys.path.insert(0, '/root/advanced-geometry')
+import os
+
+# Add parent directory to path (works regardless of where script is run from)
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 from e8_transform.core import E8Transform
